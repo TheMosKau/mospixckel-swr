@@ -151,7 +151,7 @@
             <artifactId>SkyWarsReloaded-Extension</artifactId>
             <version>1.7.13</version>
             <scope>system</scope>
-            <systemPath>SkyWarsReloaded-Extension-1.7.14.jar</systemPath>
+            <systemPath>/home/runner/work/mospixckel-swr/mospixckel-swr/SkyWarsReloaded-Extension-1.7.14.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>com.github.decentsoftware-eu</groupId>
