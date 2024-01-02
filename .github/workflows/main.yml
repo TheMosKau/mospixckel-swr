@@ -1,0 +1,29 @@
+name: build
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Java setup
+        uses: actions/setup-java@v2
+        with:
+          distribution: 'adopt'
+          java-version: 8
+          check-latest: true
+      - name: Github Signing
+        run: |
+          git config --global user.email "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
+          git config --global user.name "github-actions"
+      - name: Jar file building
+        run: mvn clean package
+      - name: Jar upload
+        uses: actions/upload-artifact@v2
+        with:
+          name: SkyWarsReloaded
+          path: target/SkyWarsReloaded-5.6.30.jar
