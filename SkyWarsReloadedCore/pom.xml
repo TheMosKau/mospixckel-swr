@@ -150,6 +150,13 @@
             <groupId>net.gcnt</groupId>
             <artifactId>SkyWarsReloaded-Extension</artifactId>
             <version>1.7.13</version>
+            <scope>system</scope>
+            <systemPath>SkyWarsReloaded-Extension-1.7.14.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.github.decentsoftware-eu</groupId>
+            <artifactId>decentholograms</artifactId>
+            <version>VERSION</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
